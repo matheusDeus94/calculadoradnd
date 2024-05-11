@@ -1,0 +1,137 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Nova Square", sans-serif;
+
+}
+
+:root {
+    --bg-color: #171717;
+    --text-color: #baa5e7;
+    --input-color: #126322;
+    --result-color: #f18819;
+    --error: #ff1294;
+    --shadow1: #1329f1;
+    --shadow2: #f12913;
+}
+
+header {
+    display: inline;
+    text-align: center;
+    image-rendering: auto;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.99 rem;
+    text-shadow: .1rem .1rem .1rem var(--shadow1), .1rem .1rem .1rem var(--shadow2), -.1rem -.1rem .1rem var(--shadow2), -.1rem -.1rem .1rem var(--shadow1);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 1.4rem;
+}
+
+footer {
+    text-align: center;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.background {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0%;
+    z-index: -1;
+}
+
+.valorInput {
+    text-align: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #12632211 ;
+}
+
+.valorResultado {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #12632211 ;
+    text-align: center;
+}
+
+.explicacoes {
+    text-align: center;
+    background-color: #12632211 ;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+.error {
+    background-color: var(--error);
+}
+
+.success {
+    background-color: var(--shadow1);
+}
+
+#valorInput {
+    text-align: center;
+    height: 5rem;
+    width: 12rem;
+    font-size: 2.3rem;
+    background-color: var(--input-color);
+    color: #fff;
+    border-radius: 1rem;
+}
+
+#valorResultadoMetros, #valorResultadoPes {
+    text-align: center;
+    height: 5rem;
+    width: 12rem;
+    font-size: 2.3rem;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+#botaoCalcular {
+    text-shadow: .1rem .1rem .1 var(--input-color), -.1rem .1rem .1 var(--input-color), .1rem -.1rem -.1 var(--input-color), -.1rem -.1rem -.1 var(--input-color);
+    color: var(--text-color);
+    height: 6rem;
+    width: 10rem;
+    border: .1rem solid var(--bg-color);
+    border-radius: 99rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-image: linear-gradient(25deg, var(--shadow2) 10% ,var(--shadow1) 75%);
+}
+
+#botaoCalcular:hover {
+    filter: brightness(.9);
+}
+
+#playAudio{
+    text-shadow: .1rem .1rem .1 var(--input-color), -.1rem .1rem .1 var(--input-color), .1rem -.1rem -.1 var(--input-color), -.1rem -.1rem -.1 var(--input-color);
+    color: var(--text-color);
+    height: 3rem;
+    padding-inline: 9rem;
+    border: .1rem solid var(--bg-color);
+    border-radius: 99rem;
+    cursor: pointer;
+    font-size: 1.35rem;
+    background-image: linear-gradient(25deg, var(--shadow2) 10% ,var(--shadow1) 75%);
+}
+
+.nova-square-regular {
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
