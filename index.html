@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Movimento - D&D5e</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="audio" loop>
+        <source src="./riders.mp3" type="audio/mp3" />
+    </audio>
+
+    <header>
+        <h1>
+            <img src="./dnd-initiative.gif" alt="dnd_initiative_gif" height="150rem">
+            Calculadora de Movimento - D&D5e
+            <img src="./dnd-wizard.gif" alt="dnd_wizard_gif" height="150rem">
+            <br><button type="button" id="playAudio">Clique aqui para uma surpresa (requer áudio)</button>
+        </h1>
+        </header>
+
+    <hr>
+
+    <div class="valorInput" id="valorInputDiv">
+        <label for="valorInput">
+            Para calcular o movimento de algo em valores de D&D, insira sua velocidade no campo abaixo em <b><i>km/h</i></b>. <br>
+            <b><u>OBSERVAÇÃO</u>:</b> Insira somente o valor numérico. Se precisar usar números decimais, utilize <b>"."</b> no lugar de <b>","</b>.
+        </label>
+        <br> <br>
+        <input type="text" id="valorInput" value="" placeholder="Ex: 30">
+        <button type="button" id="botaoCalcular">Calcular</button>
+    </div>
+
+    <div class="valorResultado" id="valorResultadoDiv">
+        <h3 for="valorResultadoMetros">Resultado:</h3> <p>(em metros)</p>
+        <input type="text" id="valorResultadoMetros" value="" disabled>
+
+        <h3 for="valorResultadoPes">Resultado:</h3> <p>(em pés)</p>
+        <input type="text" id="valorResultadoPes" value="" disabled>
+        <p>Este resultado indica o movimento que pode ser realizado em um turno durante a <u>Ação de Movimento</u>.</p>
+    </div>
+
+    <div class="explicacoes">
+        <h3>Explicações</h3>
+        <p>Para realizar a conversão, primeiro adota-se a velocidade de movimento padrão de um Humano dentro das regras de D&D5e. </p>
+        <p>De acordo com as regras, ele pode movimentar-se 9m (ou 30 pés) utilizando sua ação de movimento. Considerando que um round dentro da iniciativa são 6 segundos, é possível calcular sua velocidade dada por <sup>deslocamento</sup>&frasl;<sub>tempo</sub>. Considerando as informações que tem-se até o momento, é possível descobrir uma velocidade de 1,5m/s (não calcularei aqui a velocidade em pés/s, mas você pode fazer.) </p>
+        <p>Ou seja, um humano em D&D5e movimenta-se com uma velocidade padrão de <b>1,5m/s</b>, ou <b>5,4km/h</b>.</p>
+        <p>O que este programa faz é exatamente o processo inverso: você insere uma velocidade em <b>km/h</b> e ele calcula quanto de movimento seria possível realizar utilizando as regras de D&D5e, apresentando os resultados tanto em <b>metros</b> quanto <b>pés</b>.</p>
+    </div>
+
+    <footer>
+        <p>
+            Criado por Mathzin <3
+        </p>
+    </footer>
+</body>
+</html>
